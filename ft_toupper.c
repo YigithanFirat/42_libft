@@ -6,15 +6,15 @@
 /*   By: yfirat <yfirat@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/06 09:07:45 by yfirat            #+#    #+#             */
-/*   Updated: 2026/01/08 11:45:54 by yfirat           ###   ########.fr       */
+/*   Updated: 2026/01/08 11:52:04 by yfirat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_toupper(int c)
 {
-	if (c >= 65 && c <= 90)
+	if (c >= 97 && c <= 122)
 	{
-		c = c + 32;
+		c = c - 32;
 		return (c);
 	}
 	return (c);
