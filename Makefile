@@ -5,9 +5,6 @@ CFLAGS = -Wall -Wextra -Werror
 all:
 	$(NAME)
 
-clean:
-	rm -f ${OBJS}
-
 fclean:
 	rm -f $(NAME)
 
