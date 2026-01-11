@@ -6,7 +6,7 @@
 /*   By: yfirat <yfirat@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 15:42:10 by yfirat            #+#    #+#             */
-/*   Updated: 2026/01/10 16:18:39 by yfirat           ###   ########.fr       */
+/*   Updated: 2026/01/11 14:22:14 by yfirat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	size_t	len;
-	int		i;
+	size_t		len;
+	size_t		i;
 
 	i = 0;
 	len = ft_strlen(s);
