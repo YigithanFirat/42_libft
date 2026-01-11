@@ -6,7 +6,7 @@
 /*   By: yfirat <yfirat@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 17:22:38 by yfirat            #+#    #+#             */
-/*   Updated: 2026/01/08 18:05:36 by yfirat           ###   ########.fr       */
+/*   Updated: 2026/01/11 12:08:39 by yfirat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,4 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	return (result * signature);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	char	str1[] = "   -1234ab567";
-	printf("%d", ft_atoi(str1));
 }
