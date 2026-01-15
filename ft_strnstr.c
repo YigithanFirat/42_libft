@@ -6,7 +6,7 @@
 /*   By: yfirat <yfirat@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 15:00:26 by yfirat            #+#    #+#             */
-/*   Updated: 2026/01/11 14:19:28 by yfirat           ###   ########.fr       */
+/*   Updated: 2026/01/11 14:30:44 by yfirat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	i = 0;
 	if (*little == '\0')
-		return ((char *)big);
+		return ((char *)big[i]);
 	while (big[i] && i < len)
 	{
 		j = 0;
