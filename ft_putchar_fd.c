@@ -6,9 +6,11 @@
 /*   By: yfirat <yfirat@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 17:10:38 by yfirat            #+#    #+#             */
-/*   Updated: 2026/01/15 17:11:26 by yfirat           ###   ########.fr       */
+/*   Updated: 2026/01/15 18:23:30 by yfirat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {
