@@ -6,7 +6,7 @@
 /*   By: yfirat <yfirat@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 15:20:08 by yfirat            #+#    #+#             */
-/*   Updated: 2026/01/18 16:56:08 by yfirat           ###   ########.fr       */
+/*   Updated: 2026/01/19 20:01:40 by yfirat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strdup(const char *s)
 	char	*sp;
 
 	s_length = ft_strlen(s);
-	sp = malloc(s_length + 1);
+	sp = (char *)malloc(s_length + 1);
 	if (sp == NULL)
 		return (NULL);
 	i = 0;
