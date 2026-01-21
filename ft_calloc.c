@@ -6,7 +6,7 @@
 /*   By: yfirat <yfirat@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 12:20:40 by yfirat            #+#    #+#             */
-/*   Updated: 2026/01/19 18:44:23 by yfirat           ###   ########.fr       */
+/*   Updated: 2026/01/21 18:12:19 by yfirat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,17 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	void	*p;
+	unsigned char	*pp;
+	size_t			i;
 
-	p = malloc(nmemb * size);
-	if (p == NULL)
+	i = 0;
+	pp = malloc(nmemb * size);
+	if (pp == NULL)
 		return (NULL);
-	while (!p)
+	while (i < nmemb * size)
 	{
-		p = 0;
-		p++;
+		pp[i] = '\0';
+		i++;
 	}
-	return (p);
+	return (((void *)pp));
 }
