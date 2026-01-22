@@ -6,7 +6,7 @@
 /*   By: yfirat <yfirat@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 11:16:58 by yfirat            #+#    #+#             */
-/*   Updated: 2026/01/18 17:21:50 by yfirat           ###   ########.fr       */
+/*   Updated: 2026/01/20 16:50:22 by yfirat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,12 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}t_list;
 
 int		ft_atoi(const char *str);
 int		ft_isalpha(int c);
@@ -41,5 +47,11 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
 void	*ft_memchr(const void *s, int c, size_t n);
 char	*ft_strdup(const char *s);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putchar_fd(char c, int fd);
 
 #endif
