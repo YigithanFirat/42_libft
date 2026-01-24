@@ -6,7 +6,7 @@
 /*   By: yfirat <yfirat@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 09:04:34 by yfirat            #+#    #+#             */
-/*   Updated: 2026/01/09 13:36:51 by yfirat           ###   ########.fr       */
+/*   Updated: 2026/01/24 15:04:36 by yfirat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 
+	if (!dest || !src)
+		return (0);
 	i = 0;
 	if (size == 0)
 		return (ft_strlen(src));
