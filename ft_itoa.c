@@ -6,12 +6,11 @@
 /*   By: yfirat <yfirat@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/24 10:44:06 by yfirat            #+#    #+#             */
-/*   Updated: 2026/01/24 19:12:44 by yfirat           ###   ########.fr       */
+/*   Updated: 2026/01/24 19:13:43 by yfirat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	get_len(int c)
 {
@@ -61,12 +60,4 @@ char	*ft_itoa(int n)
 		n /= 10;
 	}
 	return (str);
-}
-
-int	main(void)
-{
-	int	a;
-
-	a = 2147483647;
-	printf("%s", ft_itoa(a));
 }
