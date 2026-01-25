@@ -6,7 +6,7 @@
 /*   By: yfirat <yfirat@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 12:20:40 by yfirat            #+#    #+#             */
-/*   Updated: 2026/01/21 18:12:19 by yfirat           ###   ########.fr       */
+/*   Updated: 2026/01/25 14:13:43 by yfirat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		return (NULL);
 	while (i < nmemb * size)
 	{
-		pp[i] = '\0';
+		pp[i] = 1;
 		i++;
 	}
 	return (((void *)pp));
