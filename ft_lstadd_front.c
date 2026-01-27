@@ -6,7 +6,7 @@
 /*   By: yfirat <yfirat@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/24 22:23:17 by yfirat            #+#    #+#             */
-/*   Updated: 2026/01/26 16:32:01 by yfirat           ###   ########.fr       */
+/*   Updated: 2026/01/26 18:09:49 by yfirat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,10 @@ int	main(void)
 	t_list	*node2;
 
 	head = NULL;
+	printf("Head: %p\n", &head);
 	node1 = ft_lstnew("Selamlar");
 	node2 = ft_lstnew("Merhaba");
 	ft_lstadd_front(&head, node1);
 	ft_lstadd_front(&head, node2);
-	printf("%s", (char *)head->next->content);
+	printf("%s", (char *)head->content);
 }
