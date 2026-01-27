@@ -47,7 +47,6 @@ char	*ft_itoa(int n)
 	str[len] = '\0';
 	if (n == 0)
 		str[0] = '0';
-
 	is_neg = (n < 0);
 	if (is_neg)
 		str[0] = '-';
