@@ -30,6 +30,6 @@ int	main(void)
 	t_list	*node1;
 
 	node1 = ft_lstnew("Selamlar");
-	ft_lstdelone(node1, (void *)del);
 	printf("%p", node1);
+	ft_lstdelone(node1, (void *)del);
 }
