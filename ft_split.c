@@ -6,7 +6,7 @@
 /*   By: yfirat <yfirat@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/24 16:01:33 by yfirat            #+#    #+#             */
-/*   Updated: 2026/01/25 00:34:59 by yfirat           ###   ########.fr       */
+/*   Updated: 2026/01/27 13:25:17 by yfirat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,46 +92,4 @@ char	**ft_split(char const *s, char c)
 		}
 	}
 	return (p);
-}
-
-#include <stdio.h>
-#include <stdlib.h>
-
-// Yazdığın fonksiyonların prototipleri (veya libft.h içeriği)
-char    **ft_split(char const *s, char c);
-
-int main(void)
-{
-    char    *str = "	 42 ile kod yazmak uye yani 	";
-    char    delimiter = ' ';
-    char    **result;
-    int     i;
-
-    printf("Parçalanacak metin: \"%s\"\n", str);
-    printf("Ayırıcı karakter: '%c'\n", delimiter);
-    printf("---------------------------\n");
-
-    result = ft_split(str, delimiter);
-
-    if (!result)
-    {
-        printf("Hata: Bellek tahsis edilemedi.\n");
-        return (1);
-    }
-
-    i = 0;
-    while (result[i] != NULL)
-    {
-        printf("[%d]. Kelime: %s\n", i, result[i]);
-        free(result[i]); // Her kelimeyi serbest bırakıyoruz
-        i++;
-    }
-    
-    // Ana diziyi serbest bırakıyoruz
-    free(result);
-
-    printf("---------------------------\n");
-    printf("İşlem başarıyla tamamlandı.\n");
-
-    return (0);
 }
