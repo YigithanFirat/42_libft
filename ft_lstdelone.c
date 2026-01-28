@@ -23,13 +23,16 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	if (!lst || !del)
 		return ;
 	del(lst->content);
+	free(lst);
 }
 
 int	main(void)
 {
 	t_list	*node1;
+	char	*s;
 
-	node1 = ft_lstnew("Selamlar");
-	printf("%p", node1);
-	ft_lstdelone(node1, (void *)del);
+	s = "Selamlar";
+	node1 = ft_lstnew(s);
+	printf("%p\n", node1);
+	ft_lstdelone(node1, del);
 }
