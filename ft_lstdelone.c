@@ -30,8 +30,9 @@ int	main(void)
 	t_list	*node1;
 	char	*s;
 
-	s = "Selamlar";
+	s = ft_strdup("Selamlar");
 	node1 = ft_lstnew(s);
+	node1->content = s;
 	printf("%p\n", node1);
 	ft_lstdelone(node1, del);
 }
