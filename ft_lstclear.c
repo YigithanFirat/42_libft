@@ -12,15 +12,17 @@
 
 #include "libft.h"
 
-void	del(void *node1)
-{
-	free(node1);
-}
-
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
+	t_list	*node1;
 	if (!lst || !del)
 		return ;
-	del(lst);
-	free(lst->next);
+	while (*lst)
+	{
+		node1 = (*lst)->next;
+		del((*lst)->content);
+		free(*lst);
+		*lst = node1;
+	}
+	*lst = NULL;
 }
