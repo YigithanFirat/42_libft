@@ -10,4 +10,52 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// Baştan yazılacak.
+#include "libft.h"
+
+int	g_l(int c)
+{
+	size_t	i;
+
+	i = 0;
+	if (c == -2147483648)
+		return (11);
+	if (c < 0)
+	{
+		c *= -1;
+		i++;
+	}
+	else if (c == 0)
+		return (1);
+	while (c > 0)
+	{
+		c = c / 10;
+		i++;
+	}
+	return (i);
+}
+
+char	*ft_itoa(int n)
+{
+	size_t	len;
+	char	*p;
+	int		neg;
+
+	len = g_l(n);
+	p = (char *)malloc(len + 1);
+	if (!p)
+		return (NULL);
+	p[len] = '\0';
+	if (n == 0)
+		p[0] = '0';
+	if (neg)
+		p[0] = '-';
+	while (n != 0)
+	{
+		if (neg)
+			p[len--] = -(n % 10) + '0';
+		else
+			p[len--] = (n % 10) + '0';
+		n /= 10;
+	}
+	return (p);
+}
