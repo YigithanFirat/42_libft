@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 int	g_l(int c)
 {
@@ -38,7 +39,6 @@ char	*ft_itoa(int n)
 {
 	size_t	len;
 	char	*p;
-	int		neg;
 
 	len = g_l(n);
 	p = (char *)malloc(len + 1);
@@ -47,11 +47,12 @@ char	*ft_itoa(int n)
 	p[len] = '\0';
 	if (n == 0)
 		p[0] = '0';
-	if (neg)
+	if (n < 0)
 		p[0] = '-';
+	len -= 1;
 	while (n != 0)
 	{
-		if (neg)
+		if (n < 0)
 			p[len--] = -(n % 10) + '0';
 		else
 			p[len--] = (n % 10) + '0';
