@@ -6,7 +6,7 @@
 /*   By: yfirat <yfirat@student.42kocaeli.com.tr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/27 19:51:22 by yfirat            #+#    #+#             */
-/*   Updated: 2026/01/27 19:57:40 by yfirat           ###   ########.fr       */
+/*   Updated: 2026/01/30 13:58:58 by yfirat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*node1;
+
 	if (!lst || !del)
 		return ;
 	while (*lst)
