@@ -20,7 +20,18 @@ Proje standart bir `Makefile` kullanılarak derlenir. Terminal üstünden aşağ
 
  ```bash
   make
-  make all
-  make fclean
+ ```
+* **Oluşturulan Obje Dosyalarını Silmek İçin:** *
+
+ ```bash
   make clean
+ ```
+* **Her Şeyi Silmek İçin: (Arşiv ve Obje Dosyaları):** *
+ ```bash
+  make fclean
+ ```
+
+* **Kütüphaneyi Temizleyip Yeniden Derlemek İçin:** *
+ ```bash
   make re
+ ```
