@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static int	c_w(char *s, char c)
+static int	c_w(const char *s, char c)
 {
 	int	i;
 	int	count;
@@ -33,9 +33,12 @@ static int	c_w(char *s, char c)
 
 static char	**ft_free_ft(char **s, int c)
 {
+	if (!s)
+		return (NULL);
+	c -= 1;
 	while (c >= 0)
 	{
-		free((char *)s[c]);
+		free(s[c]);
 		c--;
 	}
 	free(s);
@@ -72,9 +75,11 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	words = c_w((char *)s, c);
+	words = c_w(s, c);
 	i = 0;
-	p = (char **)malloc((words + 1) * sizeof(char));
+	p = (char **)malloc((words + 1) * sizeof(char *));
+	if (!p)
+		return (NULL);
 	while (*s != '\0')
 	{
 		while (*s != '\0' && *s == c)
@@ -83,7 +88,7 @@ char	**ft_split(char const *s, char c)
 		{
 			p[i] = ft_ge_wo(s, c);
 			if (!p[i])
-				return (ft_free_ft(p, i - 1));
+				return (ft_free_ft(p, i));
 			i++;
 			while (*s != '\0' && *s != c)
 				s++;
@@ -91,10 +96,4 @@ char	**ft_split(char const *s, char c)
 	}
 	p[i] = 0;
 	return (p);
-}
-
-int	main(void)
-{
-	char	str1[] = " 1 - 2 - 3 - 4-5   ";
-	printf("%d", c_w(str1, '1'));
 }
