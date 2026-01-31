@@ -72,3 +72,17 @@ Standart kütüphanelerde bulunmayan ancak sıkça ihtiyaç duyabileceğimiz fon
 * `ft_split`: Bir stringin ayırıcı karakter yardımıyla bu karaktere göre bölünmesini sağlar.
 * `ft_itoa`: Bir integer değeri string formatına dönüştürmeyi sağlar.
 * `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`: Belirtilen File Descriptor'a veri yazılmasını sağlar.
+
+**3. Bağlı Listeler (Linked List)**
+
+Veri koleksiyonlarını yönetmek için t_list yapısı ve fonksiyonları:
+
+**Liste Yapısı:**
+```c
+typedef struct s_list
+{
+    void            *content;
+    struct s_list   *next;
+} t_list;
+```
+
