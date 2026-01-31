@@ -88,12 +88,18 @@ typedef struct s_list
 
 ### Fonksiyon Detayları
 
-`ft_lstnew`: Yeni bir düğüm oluşturur. İçerik başlatılır.
-`ft_lstadd_front`: Listenin en başına yeni bir düğüm ekler.
-`ft_lstsize`: Listedeki toplam düğüm sayısını döndürür.
-`ft_lstlast`: Listenin son düğümü bulunur ve o döndürülür.
-`ft_lstadd_back`: Listenin sonuna yeni bir düğüm ekler.
-`ft_lstdelone`: Listenin içeriğini siler ve düğümü de serbest bırakır.
-`ft_lstclear`: Tüm listeyi siler ve belleği tamamen temizler.
-`ft_lstiter`: Listenin her düğümü üstünde verilen bir fonksiyonu çalıştırır.
-`ft_lstmap`: Listenin her düğümüne bir fonksiyon uygular ve sonuçlardan yeni bir liste oluşturur.
+* `ft_lstnew`: Yeni bir düğüm oluşturur. İçerik başlatılır.
+* `ft_lstadd_front`: Listenin en başına yeni bir düğüm ekler.
+* `ft_lstsize`: Listedeki toplam düğüm sayısını döndürür.
+* `ft_lstlast`: Listenin son düğümü bulunur ve o döndürülür.
+* `ft_lstadd_back`: Listenin sonuna yeni bir düğüm ekler.
+* `ft_lstdelone`: Listenin içeriğini siler ve düğümü de serbest bırakır.
+* `ft_lstclear`: Tüm listeyi siler ve belleği tamamen temizler.
+* `ft_lstiter`: Listenin her düğümü üstünde verilen bir fonksiyonu çalıştırır.
+* `ft_lstmap`: Listenin her düğümüne bir fonksiyon uygular ve sonuçlardan yeni bir liste oluşturur.
+
+## Kaynaklar
+
+Proje yazılırken dokümantasyon araştırması ve çeşitli yapay zekalardan destek alınarak proje ilerletildi.
+
+* [C Standart Library Reference] (https://www.tutorialspoint.com/c_standard_library/index.htm) - Standart fonksiyonların davranışlarını anlamak için temel kaynak.
