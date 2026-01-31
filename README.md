@@ -106,3 +106,7 @@ Proje yazılırken dokümantasyon araştırması ve çeşitli yapay zekalardan d
 * [Unix File Permissions](https://www.guru99.com/file-permissions-in-linux.html) - `open` fonksiyonu ve `0777` gibi izin bitlerinin mantığı üzerine rehber.
 * [File Discriptor Research](https://en.wikipedia.org/wiki/File_descriptor) - File Discriptor biraz daha detaylı bilgi edinebilmek için bakıldı.
 * [Linked Lists](https://www.geeksforgeeks.org/linked-list-set-1-introduction/) - Linked List projeleriyle alakalı bilgi almak için bakıldı.
+
+### AI Kullanımı
+
+Bu projede AI şu amaçlarla kullanılmıştır.
