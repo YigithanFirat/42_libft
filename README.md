@@ -1,4 +1,4 @@
-*Bu proje Yiğithan Fırat tarafından 42 müfredatının bir parçası olarak oluşturulmuştur.*
+*Bu proje yfirat tarafından 42 müfredatının bir parçası olarak oluşturulmuştur.*
 
 # Libft
 
@@ -20,3 +20,7 @@ Proje standart bir `Makefile` kullanılarak derlenir. Terminal üstünden aşağ
 
  ```bash
   make
+  make all
+  make fclean
+  make clean
+  make re
