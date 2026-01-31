@@ -59,3 +59,5 @@ Bu fonksiyonlar man kısmından yardımla birlikte yazılmıştır.
 * **Karakter Kontrolü:** `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`, `ft_isalpha`.
 * **Bellek Yönetimi:** `ft_memcmp`, `ft_memchr`, `ft_memmove`, `ft_memset`, `ft_bzero`, `ft_memcpy`.
 * **String İşlemleri:** `ft_strnstr`, `ft_strncmp`, `ft_strrchr`, `ft_strchr`, `ft_strlcat`, `ft_strlcpy`, `ft_strlen`.
+* **Dönüştürme:** `ft_toupper`, `ft_tolower`, `ft_atoi`
+* **Dinamik Bellek:** `ft_calloc`, `ft_strdup`
