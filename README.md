@@ -1,1 +1,3 @@
-*This project has been created as part of the 42 circulum by yfirat.*
+*Bu proje yfirat tarafından 42 müfredatının bir parçası olarak oluşturulmuştur.*
+
+**DESCRIPTION**
