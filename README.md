@@ -102,4 +102,4 @@ typedef struct s_list
 
 Proje yazılırken dokümantasyon araştırması ve çeşitli yapay zekalardan destek alınarak proje ilerletildi.
 
-* [C Standart Library Reference] (https://www.tutorialspoint.com/c_standard_library/index.htm) - Standart fonksiyonların davranışlarını anlamak için temel kaynak.
+* [C Standart Library Reference](https://www.tutorialspoint.com/c_standard_library/index.htm) - Standart fonksiyonların davranışlarını anlamak için temel kaynak.
