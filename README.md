@@ -61,3 +61,14 @@ Bu fonksiyonlar man kısmından yardımla birlikte yazılmıştır.
 * **String İşlemleri:** `ft_strnstr`, `ft_strncmp`, `ft_strrchr`, `ft_strchr`, `ft_strlcat`, `ft_strlcpy`, `ft_strlen`.
 * **Dönüştürme:** `ft_toupper`, `ft_tolower`, `ft_atoi`
 * **Dinamik Bellek:** `ft_calloc`, `ft_strdup`
+
+**2. Ek Yardımcı Fonksiyonlar**
+
+Standart kütüphanelerde bulunmayan ancak sıkça ihtiyaç duyabileceğimiz fonksiyonlar:
+
+* `ft_substr`: Bir stringin belirli bir bölgesini döndürür.
+* `ft_strjoin`: İki stringi birleştirerek yeni bir string oluşturur.
+* `ft_strtrim`: Stringin başındaki ve sonundaki karakterleri temizler.
+* `ft_split`: Bir stringin ayırıcı karakter yardımıyla bu karaktere göre bölünmesini sağlar.
+* `ft_itoa`: Bir integer değeri string formatına dönüştürmeyi sağlar.
+* `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`: Belirtilen File Descriptor'a veri yazılmasını sağlar.
