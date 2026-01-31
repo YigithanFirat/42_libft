@@ -16,7 +16,7 @@ Libft, 42 müfredatının ilk projesidir. Bu projedeki temel amaç ise C dilinde
 
 Proje standart bir `Makefile` kullanılarak derlenir. Terminal üstünden aşağıdaki komutları kullanabilirsiniz.
 
-* **Kütüphaneyi Oluşturmak İçin:** *
+* **Kütüphaneyi Oluşturmak İçin:**
 
  ```bash
   make
@@ -35,3 +35,16 @@ Proje standart bir `Makefile` kullanılarak derlenir. Terminal üstünden aşağ
  ```bash
   make re
  ```
+
+### Kullanım
+
+Libft aslında bir kütüphanedir bu yüzden tek başına çalıştırılması mümkün değilir.
+
+1. `libft.a` dosyasını `make` komutuyla oluşturunuz.
+2. Kodlarınıza header dosyasını ekleyiniz. `#include "libfth.h"`
+3. Derlenme sırasında kütüphaneyi linkleyiniz.
+
+ ```bash
+  cc main.c -L. lft
+ ```
+
