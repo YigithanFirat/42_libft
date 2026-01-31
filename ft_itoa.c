@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	g_l(int c)
+static int	g_l(int c)
 {
 	size_t	i;
 
