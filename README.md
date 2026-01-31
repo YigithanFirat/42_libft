@@ -103,3 +103,6 @@ typedef struct s_list
 Proje yazılırken dokümantasyon araştırması ve çeşitli yapay zekalardan destek alınarak proje ilerletildi.
 
 * [C Standart Library Reference](https://www.tutorialspoint.com/c_standard_library/index.htm) - Standart fonksiyonların davranışlarını anlamak için temel kaynak.
+* [Unix File Permissions](https://www.guru99.com/file-permissions-in-linux.html) - `open` fonksiyonu ve `0777` gibi izin bitlerinin mantığı üzerine rehber.
+* [File Discriptor Research](https://en.wikipedia.org/wiki/File_descriptor) - File Discriptor biraz daha detaylı bilgi edinebilmek için bakıldı.
+* [Linked Lists in C](https://www.geeksforgeeks.org/linked-list-set-1-introduction/) - Bonus kısmındaki veri yapılarının görsel anlatımı.
