@@ -110,3 +110,9 @@ Proje yazılırken dokümantasyon araştırması ve çeşitli yapay zekalardan d
 ### AI Kullanımı
 
 Bu projede AI şu amaçlarla kullanılmıştır.
+
+* **Dokümantasyon:** Projenin gereksinimlerini karşılayan profesyonel bir `README.md` dosyasını yapılandırabilmek ve fonksiyonların işlevlerini anlayabilmek adına kullanıldı.
+
+* **Hata Ayıklama Yardımı:** Projede karşılaştığım ve fark edemediğim kısımlarda `KOD ALMADAN` fonksiyon işlevine yönelik şekilde hataları ayıklayarak bu hataları öğrenmek adına kullanıldı.
+
+* **Makefile:** Oluşturulan komutların ne için kullanılacağı nasıl kurgulanacağını anlamak ve eklediğimiz komutların dışında olması gereken komutların örn:`PHONY:` ne için eklediğimizi öğrenmek adına kullanıldı.
