@@ -52,7 +52,7 @@ Libft aslında bir kütüphanedir bu yüzden tek başına çalıştırılması m
 
 Kütüphane içerisinde fonksiyonlar şu kategorilere ayrılmaktadır.
 
-1. Standart Libc Fonksiyonları
+**1. Standart Libc Fonksiyonları**
 
 Bu fonksiyonlar man kısmından yardımla birlikte yazılmıştır.
 
