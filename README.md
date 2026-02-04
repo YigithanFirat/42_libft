@@ -38,7 +38,7 @@ Proje standart bir `Makefile` kullanılarak derlenir. Terminal üstünden aşağ
 
 ### Kullanım
 
-Libft aslında bir kütüphanedir bu yüzden tek başına çalıştırılması mümkün değilir.
+Libft aslında bir kütüphanedir bu yüzden tek başına çalıştırılması mümkün değildir.
 
 1. `libft.a` dosyasını `make` komutuyla oluşturunuz.
 2. Kodlarınıza header dosyasını ekleyiniz. `#include "libfth.h"`
