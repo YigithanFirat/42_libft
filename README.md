@@ -1,14 +1,14 @@
-*Bu proje yfirat tarafından 42 müfredatının bir parçası olarak oluşturulmuştur.*
+*This project has been created as part of the 42 cirriculum by yfirat.*
 
 # Libft
 
 ## Açıklama
 
-Libft, 42 müfredatının ilk projesidir. Bu projedeki temel amaç ise C dilinde ki standart kütüphane fonksiyonlarını sıfırdan yeniden kodlayarak ortaya kişisel bir kütüphane çıkarmaktır.
+Libft, 42 müfredatının ilk projesidir. Bu projedeki temel amaç ise C dilinde ki standart libc fonksiyonlarını, ek yardımcı fonksiyonları ve bağlı listelerin belli başlı projelerini sıfırdan yeniden kodlayarak ortaya kişisel bir kütüphane çıkarmaktır.
 
 ** Projenin Hedefleri **
 
-* Standart fonksiyonların çalışma mantığını derinlemesine anlamak.
+* Standart fonksiyonların, ek yardımcı fonksiyonların ve bağlı listelerin çalışma mantığını derinlemesine anlamak.
 * C dilinde veri yapıları (struct), pointer konusu üstünde yetkinlik kazanmak.
 * Gelecekte 42 projelerinde kullanılacak olan bir kütüphane oluşturmak.
 
@@ -103,7 +103,7 @@ typedef struct s_list
 Proje yazılırken dokümantasyon araştırması ve çeşitli yapay zekalardan destek alınarak proje ilerletildi.
 
 * [C Standart Library Reference](https://www.tutorialspoint.com/c_standard_library/index.htm) - Standart fonksiyonların davranışlarını anlamak için temel kaynak.
-* [Unix File Permissions](https://www.guru99.com/file-permissions-in-linux.html) - `open` fonksiyonu ve `0777` gibi izin bitlerinin mantığı üzerine rehber.
+* [Unix File Permissions](https://www.guru99.com/file-permissions.html) - `open` fonksiyonu ve `0777` gibi izin bitlerinin mantığı üzerine rehber.
 * [File Discriptor Research](https://en.wikipedia.org/wiki/File_descriptor) - File Discriptor biraz daha detaylı bilgi edinebilmek için bakıldı.
 * [Linked Lists](https://www.geeksforgeeks.org/linked-list-set-1-introduction/) - Linked List projeleriyle alakalı bilgi almak için bakıldı.
 
