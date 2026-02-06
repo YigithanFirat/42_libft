@@ -71,14 +71,12 @@ static char	*ft_ge_wo(const char *s, char c)
 char	**ft_split(char const *s, char c)
 {
 	char	**p;
-	int		words;
 	int		i;
 
 	if (!s)
 		return (NULL);
-	words = c_w(s, c);
 	i = 0;
-	p = (char **)malloc((words + 1) * sizeof(char *));
+	p = (char **)malloc((c_w(s, c) + 1) * sizeof(char *));
 	if (!p)
 		return (NULL);
 	while (*s != '\0')
