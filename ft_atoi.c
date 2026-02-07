@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(const char *str)
+int	ft_atoi(const char *nptr)
 {
 	int	i;
 	int	signature;
@@ -19,17 +19,17 @@ int	ft_atoi(const char *str)
 	i = 0;
 	signature = 1;
 	result = 0;
-	while ((str[i] == ' ') || (str[i] >= 9 && str[i] <= 13))
+	while ((nptr[i] == ' ') || (nptr[i] >= 9 && nptr[i] <= 13))
 		i++;
-	if (str[i] == '-' || str[i] == '+')
+	if (nptr[i] == '-' || nptr[i] == '+')
 	{
-		if (str[i] == '-')
+		if (nptr[i] == '-')
 			signature *= -1;
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
-		result = (result * 10) + (str[i] - 48);
+		result = (result * 10) + (nptr[i] - 48);
 		i++;
 	}
 	return (result * signature);
