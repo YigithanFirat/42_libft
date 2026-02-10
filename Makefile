@@ -53,7 +53,7 @@ $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 	ranlib $(NAME)
 
-%.o: %.c
+%.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
